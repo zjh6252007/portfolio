@@ -1,0 +1,17 @@
+.home{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.introduce{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+}
+.highlight{
+    color: rosybrown;
+}
+
+@media(max-width:768px){
+    .introduce{
+        font-size:20px;
+    }
+}

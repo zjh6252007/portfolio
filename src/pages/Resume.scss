@@ -1,0 +1,4 @@
+.pdfContainer {
+    height: 50vh; /* 或足够大以适应两页PDF */
+    overflow-y: scroll; /* 允许在容器内滚动 */
+  }
