@@ -69,6 +69,16 @@ p {
     animation-duration: 20s;
 }
 
+.foot-content{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    color: black;
+}
+.copyright{
+    
+    font-size: 10px;
+}
 @keyframes move-forever {
     0% {
         transform: translate3d(-90px, 0, 0);

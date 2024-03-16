@@ -59,7 +59,6 @@ const Header = () =>{
         <MenuItem onClick={()=>{navgation('/home')();handleClose();}}>Home</MenuItem>
         <MenuItem onClick={()=>{navgation('/projects')();handleClose();}}>Projects</MenuItem>
         <MenuItem onClick={()=>{navgation('/resume')();handleClose();}}>Resume</MenuItem>
-        <MenuItem onClick={()=>{navgation('/contact')();handleClose();}}>Contact</MenuItem>
         </Menu>
         </div>
         </div>

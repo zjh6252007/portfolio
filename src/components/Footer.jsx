@@ -1,8 +1,8 @@
 import './Footer.scss';
 const Footer = () => {
+    const year = new Date().getFullYear()
     return (
         <div className="footer">
-            
             <div>
                 <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
@@ -16,6 +16,9 @@ const Footer = () => {
                         <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
                     </g>
                 </svg>
+            </div>
+            <div className='foot-content'>
+            <p className='copyright'>©{year} JZ</p>
             </div>
         </div>
     );

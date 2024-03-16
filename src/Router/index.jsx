@@ -1,6 +1,5 @@
 import { createBrowserRouter,Navigate} from "react-router-dom";
 import Home from "../pages/Home.jsx";
-import Contact from "../pages/Contact.jsx";
 import Projects from "../pages/Projects.jsx";
 import Resume from "../pages/Resume.jsx";
 import DefaultPage from "../pages/index.jsx";
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
             {
                 path:'/home',
                 element:<Home/>
-            },
-            {
-                path:'/contact',
-                element:<Contact/>
             },
             {
                 path:'/resume',

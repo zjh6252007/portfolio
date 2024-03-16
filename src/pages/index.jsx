@@ -5,7 +5,7 @@ import './index.scss'
 import { pdfjs } from 'react-pdf';
 const DefaultPage = () =>
 {
-    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
     return(
     <div className="mainPage">
     <Header className="header"/>

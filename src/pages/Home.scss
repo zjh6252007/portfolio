@@ -1,17 +1,143 @@
 .home{
+    display: flex;
     margin-top: 20px;
     margin-left: 40px;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.introduce{
+.hello{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:30px;
+    min-height: 100px;
+    
 }
 .highlight{
     color: rosybrown;
 }
 
+.background{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    position: relative;
+}
+.aboutme{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.aboutcontent{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-left-radius: 110px 19px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.personal-skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-skill ul{
+    width: 500px;
+}
+.personal-skill li{
+    list-style: none;
+    font-size: 18px;
+    margin:48px 0;
+    position: relative;
+}
+
+.personal-skill li::before,.personal-skill li::after{
+    content:"";
+    display: block;
+    height: 16px;
+    width: 100%;
+    background-color: #8cdcbe;
+    position: absolute;
+    bottom:-28px;
+    border-radius: 6px;
+}
+.personal-skill li::before{
+    box-shadow: 0 0 6px rgba(75,207,250,0.2);
+}
+.personal-skill li:after{
+    background-image: linear-gradient(
+        90deg,
+        #0fbcf9,
+        #57d1cf
+    );
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.react::after{
+    animation-name: react;
+}
+.java::after{
+    animation-name: java;
+}
+.css:after{
+    animation-name: css;
+}
+.springboot:after{
+    animation-name: springboot;
+}
+.sql:after{
+    animation-name:sql;
+}
+@keyframes react{
+    from{
+        width: 0;
+    }to{
+        width: 100%;
+    }
+}
+@keyframes java{
+    from{
+        width: 0;
+    }to{
+        width: 80%;
+    }
+}
+
+@keyframes css{
+    from{
+        width: 0;
+    }to{
+        width: 85%;
+    }
+}
+@keyframes springboot{
+    from{
+        width: 0;
+    }to{
+        width: 82%;
+    }
+}
+@keyframes sql{
+    from{
+        width: 0;
+    }to{
+        width: 100%;
+    }
+}
 @media(max-width:768px){
-    .introduce{
+    .hello{
         font-size:20px;
+    }
+    .aboutcontent{
+        font-size:15px;
+        margin-right: 15px;
     }
 }
