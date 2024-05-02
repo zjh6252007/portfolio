@@ -14,6 +14,11 @@ const Projects = () =>{
             </div>
             <div className="gridcontainer">
             <Grid container className="container">
+                <Grid xs={6} sm={6} md={3}>
+                <a href="https://github.com/zjh6252007/Property-Manager" target="_blank" rel="noopener noreferrer"></a>
+                    <FlipCard coverUrl={'./propertymanager.png'} introduce={"Property Manager System"}
+                    backContent={<span>Frontend:React<br/>Backend:SpringBoot<br/>Database:MySql</span>}/>
+                </Grid>
                 <Grid xs={6} sm={6} md={3} >
                     <a href="https://wlappliance.com" target="_blank" rel="noopener noreferrer">
                     <FlipCard coverUrl={'/wlappliance.png'} introduce={"Ecommerical Website"}
@@ -31,10 +36,6 @@ const Projects = () =>{
                     <FlipCard coverUrl={'/simulator.png'} introduce={"Driving Simulator"}
                     backContent={<span>Unity3D<br/>VR<br/>Connect With Sumo<br/>Allow Multiple Driver<br/>Create BaseMap</span>}/>
                     </a>
-                </Grid>
-                <Grid xs={6} sm={6} md={3}>
-                    <FlipCard coverUrl={'./propertymanager.png'} introduce={"Property Manager System"}
-                    backContent={<span>Frontend:React<br/>Backend:SpringBoot<br/>Database:MySql</span>}/>
                 </Grid>
             </Grid>
             </div>
